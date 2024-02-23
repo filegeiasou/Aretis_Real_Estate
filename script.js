@@ -1,5 +1,9 @@
+// function openHouseDetails(address, details, price, imageUrls) {
+//     window.open(`houseDetails.html?address=${encodeURIComponent(address)}&details=${encodeURIComponent(details)}&price=${encodeURIComponent(price)}&imageUrls=${encodeURIComponent(JSON.stringify(imageUrls))}`, '_blank');
+// }
+
 function openHouseDetails(address, details, price, imageUrls) {
-    window.open(`houseDetails.html?address=${encodeURIComponent(address)}&details=${encodeURIComponent(details)}&price=${encodeURIComponent(price)}&imageUrls=${encodeURIComponent(JSON.stringify(imageUrls))}`, '_blank');
+    window.location.href = `houseDetails.html?address=${encodeURIComponent(address)}&details=${encodeURIComponent(details)}&price=${encodeURIComponent(price)}&imageUrls=${encodeURIComponent(JSON.stringify(imageUrls))}`;
 }
 
 function a(listingElement) {
