@@ -6,6 +6,7 @@ function a(listingElement) {
     let address = listingElement.querySelector('h3').textContent;
     let details = listingElement.querySelector('p').textContent;
     let price = listingElement.querySelectorAll('p')[1].textContent;
+    address = address.replace(/ /g, '_');
     let imageUrls = [];
     let i = 1;
 
@@ -19,11 +20,13 @@ function a(listingElement) {
             if (i <= 10) {
                 loadImage(); // Load the next image
             } else {
+                address = address.replace(/_/g, ' ');
                 openHouseDetails(address, details, price, imageUrls); // All images loaded, call openHouseDetails
             }
         };
         img.onerror = function() {
             console.log('Image not found:', imageUrl);
+            address = address.replace(/_/g, ' ');
             openHouseDetails(address, details, price, imageUrls); // Image failed to load, call openHouseDetails with the images that loaded successfully
         };
     }
