@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARB Properties</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to ARB Properties</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#" id="chatbot-link">Live Chat</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>About Us</h2>
+      <img src="IMG_2302.jpg" width="300">
+      <p>Welcome to ARB Properties, where we strive to help you find your dream home.</p>
+      <p>Our team of experienced agents is dedicated to providing exceptional service to our clients.</p>
+    </div>
+  </section>
+  <section id="listings">
+    <div class="container">
+      <h2>Current Listings</h2>
+    <div class="listings-container">
+        <div class="listing" onclick="a(this)">
+            <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>123 Main St</h3>
+            <p>3 bedrooms / 2 bathrooms</p>
+            <p>$300,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="456_Oak_Ave/house1.jpg" alt="House 1" width="250">
+            <h3>456 Oak Ave</h3>
+            <p>4 bedrooms / 3 bathrooms</p>
+            <p>$400,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>789 Elm St</h3>
+            <p>4 bedrooms / 3 bathrooms</p>
+            <p>$350,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>1011 Pqs St</h3>
+            <p>1 bedrooms / 1 bathrooms</p>
+            <p>$100,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>1213 Pqs St</h3>
+            <p>2 bedrooms / 2 bathrooms</p>
+            <p>$200,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>1415 Pqs St</h3>
+            <p>3 bedrooms / 3 bathrooms</p>
+            <p>$300,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>1617 Pqs St</h3>
+            <p>4 bedrooms / 4 bathrooms</p>
+            <p>$400,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>1819 Pqs St</h3>
+            <p>5 bedrooms / 5 bathrooms</p>
+            <p>$500,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>2021 Pqs St</h3>
+            <p>6 bedrooms / 6 bathrooms</p>
+            <p>$600,000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+          <img src="123_Main_St/house1.jpg" alt="House 1" width="250">
+            <h3>2223 Pqs St</h3>
+            <p>7 bedrooms / 7 bathrooms</p>
+            <p>$700,000</p>
+        </div>
+    </div>
+    </div>
+  </section>
+  <div id="pagination-bar"></div>
+  <script src="listing.js"></script>
+  <!-- <div id="chatbot" style="display: none; position: fixed; right: 20px; bottom: 20px;">
+    <iframe id="chatbot-iframe" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/371f83ce-4f8b-4662-aafc-d43cf2084652"></iframe>
+  </div> -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to schedule a viewing? Contact us today!</p>
+      <form class="contact-form" action="https://formspree.io/f/xnqevnvp" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 ARB Properties</p>
+    </div>
+  </footer>
+</body>
+</html>
