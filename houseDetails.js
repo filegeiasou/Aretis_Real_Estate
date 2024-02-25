@@ -82,8 +82,8 @@ window.onload = function() {
         The house also features a large backyard, perfect for outdoor activities. 
         With its prime location close to schools, parks, and shopping centers, 123 Main St is a wonderful place to call home`;
         document.getElementById('desc').textContent = fileContent;
-        const map = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.6488794558923!2d-122.4328427238257!3d37.469011372064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f74b137aa5993%3A0x50b4f124707e7c92!2s123%20Main%20St%2C%20Half%20Moon%20Bay%2C%20CA%2094019%2C%20USA!5e0!3m2!1sen!2sgr!4v1708811391674!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-        document.getElementById('map').innerHTML = map;
+        // const map = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.6488794558923!2d-122.4328427238257!3d37.469011372064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f74b137aa5993%3A0x50b4f124707e7c92!2s123%20Main%20St%2C%20Half%20Moon%20Bay%2C%20CA%2094019%2C%20USA!5e0!3m2!1sen!2sgr!4v1708811391674!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        // document.getElementById('map').innerHTML = map;
     }
     else if(address1 === "456 Oak Ave") {
         const fileContent = `Welcome to 456 Elm St, a beautiful and modern home located in a peaceful and serene neighborhood.
@@ -94,8 +94,8 @@ window.onload = function() {
         The backyard is a private oasis, with a covered patio and lush landscaping.
         Located near top-rated schools and local amenities, 456 Elm St is the perfect place to call home.`;
         document.getElementById('desc').textContent = fileContent;
-        const map = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.701130447463!2d-122.44097591303994!3d37.46777790003434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f74ae24cc563b%3A0x22c2833c16b6e348!2s456%20Oak%20Ave%2C%20Half%20Moon%20Bay%2C%20CA%2094019%2C%20USA!5e0!3m2!1sen!2sgr!4v1708805627798!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
-        document.getElementById('map').innerHTML = map;
+        // const map = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.701130447463!2d-122.44097591303994!3d37.46777790003434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f74ae24cc563b%3A0x22c2833c16b6e348!2s456%20Oak%20Ave%2C%20Half%20Moon%20Bay%2C%20CA%2094019%2C%20USA!5e0!3m2!1sen!2sgr!4v1708805627798!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        // document.getElementById('map').innerHTML = map;
     }
     else if(address1 === "789 Elm St") {
         const fileContent = `Welcome to 789 Elm St, a stunning and luxurious home located in a prestigious and sought-after neighborhood.
