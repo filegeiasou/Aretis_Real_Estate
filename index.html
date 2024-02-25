@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARB Properties</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to ARB Properties</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#" id="chatbot-link">Live Chat</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>About Us</h2>
+      <img src="IMG_2302.jpg" width="300">
+      <p>Welcome to ARB Properties, where we strive to help you find your dream home.</p>
+      <p>Our team of experienced agents is dedicated to providing exceptional service to our clients.</p>
+    </div>
+  </section>
+  <section id="listings">
+    <div class="container">
+      <h2>Current Listings</h2>
+    <div class="listings-container">
+        <div class="listing" onclick="a(this)">
+            <img src="1/house1.jpg" alt="House 1" width="250">
+            <h3>1</h3>
+            <p>Μεζονέτα, 185τ.μ.
+              Κέντρο, Άλιμος (Αθήνα - Νότια Προάστια)</p>
+            <p>€1.550.000</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+            <img src="2/house1.jpg" alt="House 1" width="250">
+            <h3>2</h3>
+            <p>Εκθεσιακός χώρος, 1500τ.μ.
+              Ασπρόπυργος (Υπόλοιπο Αττικής)
+              Εθνική Οδός Αθηνών-Κορίνθου, Χάλυβας 19300</p>
+            <p>€3.500 / μήνα</p>
+        </div>
+        <div class="listing" onclick="a(this)">
+            <img src="3/house1.jpg" alt="House 1" width="250">
+            <h3>3</h3>
+            <p>Μονοκατοικία, 200τ.μ.
+              Κέντρο, Πειραιάς (Αθήνα - Νότια Προάστια)</p>
+            <p>€1.200.000</p>
+        </div>
+    </div>
+    </div>
+  </section>
+  <div id="pagination-bar"></div>
+  <script src="listing.js"></script>
+  <!-- <div id="chatbot" style="display: none; position: fixed; right: 20px; bottom: 20px;">
+    <iframe id="chatbot-iframe" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/371f83ce-4f8b-4662-aafc-d43cf2084652"></iframe>
+  </div> -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to schedule a viewing? Contact us today!</p>
+      <form class="contact-form" action="https://formspree.io/f/xnqevnvp" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 ARB Properties</p>
+    </div>
+  </footer>
+</body>
+</html>
